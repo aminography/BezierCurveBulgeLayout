@@ -1,6 +1,23 @@
 # BezierCurveBulgeLayout
 BezierCurveBulgeLayout makes a layout just like google pay.
 
+Download
+--------
+Add the following lines to your `build.gradle` file:
+
+```gradle
+repositories {
+    jcenter()
+}
+  
+dependencies {
+    implementation 'com.aminography:beziercurvebulgelayout:1.0.1'
+}
+```
+
+How to use BezierCurveBulgeLayout?
+--------
+
 ```xml
 <com.aminography.beziercurvebulgelayout.BezierCurveBulgeLayout
     android:id="@+id/bulgeLayout"

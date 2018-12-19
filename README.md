@@ -21,3 +21,5 @@ BezierCurveBulgeLayout makes a layout just like google pay.
 
 </com.aminography.beziercurvebulgelayout.BezierCurveBulgeLayout>
 ```
+
+![Example](screenshot.png)

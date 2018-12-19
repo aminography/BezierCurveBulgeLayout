@@ -39,6 +39,6 @@ How to use BezierCurveBulgeLayout?
 </com.aminography.beziercurvebulgelayout.BezierCurveBulgeLayout>
 ```
 
-![Example](images/screenshot.png)
-
 ![Example](images/attributes.png)
+
+![Example](images/screenshot.png)

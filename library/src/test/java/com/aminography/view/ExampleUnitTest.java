@@ -1,4 +1,4 @@
-package com.aminography.beziercurvebulgelayout;
+package com.aminography.view;
 
 import org.junit.Test;
 

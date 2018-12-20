@@ -1,4 +1,4 @@
-package com.aminography.beziercurvebulgelayout;
+package com.aminography.view;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

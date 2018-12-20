@@ -19,7 +19,7 @@ How to use BezierCurveBulgeLayout?
 --------
 
 ```xml
-<com.aminography.beziercurvebulgelayout.BezierCurveBulgeLayout
+<com.aminography.view.BezierCurveBulgeLayout
     android:id="@+id/bulgeLayout"
     android:layout_width="match_parent"
     android:layout_height="56dp"
@@ -36,7 +36,7 @@ How to use BezierCurveBulgeLayout?
         android:layout_gravity="center"
         android:src="@android:drawable/ic_menu_compass"/>
 
-</com.aminography.beziercurvebulgelayout.BezierCurveBulgeLayout>
+</com.aminography.view.BezierCurveBulgeLayout>
 ```
 
 ![Example](images/attributes.png)

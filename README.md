@@ -3,7 +3,7 @@ BezierCurveBulgeLayout makes a layout just like google pay.
 
 Download
 --------
-Add the following lines to your `build.gradle` file:
+Add the following lines to your app level `build.gradle` file:
 
 ```gradle
 repositories {

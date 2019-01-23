@@ -72,28 +72,30 @@ class BezierCurveBulgeLayout @JvmOverloads constructor(
         endCurveFirstControlPoint.set(endCurveStartPoint.x + curveWidth / 2, endCurveStartPoint.y)
         endCurveSecondControlPoint.set(endCurveEndPoint.x - curveWidth * 5 / 8, endCurveEndPoint.y)
 
-        path.reset()
-        path.moveTo(0f, baseY.toFloat())
-        path.lineTo(startCurveStartPoint.x.toFloat(), startCurveStartPoint.y.toFloat())
+        path.apply {
+            reset()
+            moveTo(0f, baseY.toFloat())
+            lineTo(startCurveStartPoint.x.toFloat(), startCurveStartPoint.y.toFloat())
 
-        path.cubicTo(
-            startCurveFirstControlPoint.x.toFloat(), startCurveFirstControlPoint.y.toFloat(),
-            startCurveSecondControlPoint.x.toFloat(), startCurveSecondControlPoint.y.toFloat(),
-            startCurveEndPoint.x.toFloat(), startCurveEndPoint.y.toFloat()
-        )
+            cubicTo(
+                    startCurveFirstControlPoint.x.toFloat(), startCurveFirstControlPoint.y.toFloat(),
+                    startCurveSecondControlPoint.x.toFloat(), startCurveSecondControlPoint.y.toFloat(),
+                    startCurveEndPoint.x.toFloat(), startCurveEndPoint.y.toFloat()
+            )
 
-        path.lineTo(endCurveStartPoint.x.toFloat(), endCurveStartPoint.y.toFloat())
+            lineTo(endCurveStartPoint.x.toFloat(), endCurveStartPoint.y.toFloat())
 
-        path.cubicTo(
-            endCurveFirstControlPoint.x.toFloat(), endCurveFirstControlPoint.y.toFloat(),
-            endCurveSecondControlPoint.x.toFloat(), endCurveSecondControlPoint.y.toFloat(),
-            endCurveEndPoint.x.toFloat(), endCurveEndPoint.y.toFloat()
-        )
+            cubicTo(
+                    endCurveFirstControlPoint.x.toFloat(), endCurveFirstControlPoint.y.toFloat(),
+                    endCurveSecondControlPoint.x.toFloat(), endCurveSecondControlPoint.y.toFloat(),
+                    endCurveEndPoint.x.toFloat(), endCurveEndPoint.y.toFloat()
+            )
 
-        path.lineTo(viewWidth.toFloat(), baseY.toFloat())
-        path.lineTo(viewWidth.toFloat(), viewHeight.toFloat())
-        path.lineTo(0f, viewHeight.toFloat())
-        path.close()
+            lineTo(viewWidth.toFloat(), baseY.toFloat())
+            lineTo(viewWidth.toFloat(), viewHeight.toFloat())
+            lineTo(0f, viewHeight.toFloat())
+            close()
+        }
     }
 
     override fun onDraw(canvas: Canvas) {
